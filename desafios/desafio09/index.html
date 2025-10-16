@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Seus vídeos favoritos</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .container a {
+      flex: 0 0 50%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    img {
+      width: 300px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Vídeos legais para assistir</h1>
+  
+  <div class="container">
+    <a href="curso_html.html"><img src="imagens/thumb-html.png" alt="Curso HTML"></a>
+    <a href="curso_js.html"><img src="imagens/thumb-js.png" alt="Curso JavaScript"></a>
+    <a href="curso_python.html"><img src="imagens/thumb-python.png" alt="Curso Python"></a>
+    <a href="curso_hardware.html"><img src="imagens/thumb-hardware.png" alt="Curso Hardware"></a>
+  </div>
+</body>
+</html>
