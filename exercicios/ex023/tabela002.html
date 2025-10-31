@@ -31,6 +31,7 @@
             background-color: lightgray;
             width: 500px;
             border-collapse: collapse;
+            position: relative;
             margin: auto;
         }
 
@@ -49,15 +50,31 @@
         }
 
         td, th{
-            border: 1px solid black;
+            border: 1px solid #383838;
             padding: 10px;
             text-align: justify;
-        }
+        }  
 
-        thead, tfoot{
-            background-color: black;
+        thead, tfoot {
+            background-color: #383838;
             color: white;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #000000c7;
+        }
+        
+        /*
+            tbody > tr:nth-child(odd){ # 2n-1 #
+                background-color: white;
+            }
+
+            tbody > tr:nth-child(even) { # 2n #
+                background-color: lightgray;
+            }
+        */ 
 
         td.num{
             text-align: right;
@@ -83,8 +100,8 @@
         <caption>População das Unidades Federativas</caption>
         <thead> <!-- Cabeça da Tabela -->
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody> <!-- Corpo da Tabela -->
@@ -226,10 +243,22 @@
         </tbody>
         <tfoot> <!-- Pé da Tabela -->
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>213.421.037</strong></td>
             </tr>
         </tfoot>
     </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quidem fuga. Facere accusantium, numquam ad assumenda impedit sapiente recusandae doloremque error ullam non odio suscipit, quaerat fuga? Culpa, ad tenetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate iste, at ipsa saepe sunt laborum asperiores quod quia sapiente perferendis consectetur. Nobis quis, magnam obcaecati delectus natus accusantium error expedita? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, nesciunt! Eum quod corrupti ipsum fugit optio vel. Ducimus, officiis ratione? Facere, ipsum repellendus repudiandae tenetur quaerat totam enim delectus magnam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae minus officiis quisquam pariatur, quia totam sapiente asperiores vero libero magnam a commodi ab. Debitis blanditiis iusto doloribus nobis? Possimus, atque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ipsum, sint consequuntur id quaerat iure fuga cum illum impedit quis consequatur sit natus vel possimus molestias voluptatum repellat est cumque.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quidem fuga. Facere accusantium, numquam ad assumenda impedit sapiente recusandae doloremque error ullam non odio suscipit, quaerat fuga? Culpa, ad tenetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate iste, at ipsa saepe sunt laborum asperiores quod quia sapiente perferendis consectetur. Nobis quis, magnam obcaecati delectus natus accusantium error expedita? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, nesciunt! Eum quod corrupti ipsum fugit optio vel. Ducimus, officiis ratione? Facere, ipsum repellendus repudiandae tenetur quaerat totam enim delectus magnam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae minus officiis quisquam pariatur, quia totam sapiente asperiores vero libero magnam a commodi ab. Debitis blanditiis iusto doloribus nobis? Possimus, atque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ipsum, sint consequuntur id quaerat iure fuga cum illum impedit quis consequatur sit natus vel possimus molestias voluptatum repellat est cumque.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quidem fuga. Facere accusantium, numquam ad assumenda impedit sapiente recusandae doloremque error ullam non odio suscipit, quaerat fuga? Culpa, ad tenetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate iste, at ipsa saepe sunt laborum asperiores quod quia sapiente perferendis consectetur. Nobis quis, magnam obcaecati delectus natus accusantium error expedita? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, nesciunt! Eum quod corrupti ipsum fugit optio vel. Ducimus, officiis ratione? Facere, ipsum repellendus repudiandae tenetur quaerat totam enim delectus magnam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae minus officiis quisquam pariatur, quia totam sapiente asperiores vero libero magnam a commodi ab. Debitis blanditiis iusto doloribus nobis? Possimus, atque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ipsum, sint consequuntur id quaerat iure fuga cum illum impedit quis consequatur sit natus vel possimus molestias voluptatum repellat est cumque.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quidem fuga. Facere accusantium, numquam ad assumenda impedit sapiente recusandae doloremque error ullam non odio suscipit, quaerat fuga? Culpa, ad tenetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate iste, at ipsa saepe sunt laborum asperiores quod quia sapiente perferendis consectetur. Nobis quis, magnam obcaecati delectus natus accusantium error expedita? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, nesciunt! Eum quod corrupti ipsum fugit optio vel. Ducimus, officiis ratione? Facere, ipsum repellendus repudiandae tenetur quaerat totam enim delectus magnam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae minus officiis quisquam pariatur, quia totam sapiente asperiores vero libero magnam a commodi ab. Debitis blanditiis iusto doloribus nobis? Possimus, atque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ipsum, sint consequuntur id quaerat iure fuga cum illum impedit quis consequatur sit natus vel possimus molestias voluptatum repellat est cumque.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quidem fuga. Facere accusantium, numquam ad assumenda impedit sapiente recusandae doloremque error ullam non odio suscipit, quaerat fuga? Culpa, ad tenetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate iste, at ipsa saepe sunt laborum asperiores quod quia sapiente perferendis consectetur. Nobis quis, magnam obcaecati delectus natus accusantium error expedita? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, nesciunt! Eum quod corrupti ipsum fugit optio vel. Ducimus, officiis ratione? Facere, ipsum repellendus repudiandae tenetur quaerat totam enim delectus magnam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae minus officiis quisquam pariatur, quia totam sapiente asperiores vero libero magnam a commodi ab. Debitis blanditiis iusto doloribus nobis? Possimus, atque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ipsum, sint consequuntur id quaerat iure fuga cum illum impedit quis consequatur sit natus vel possimus molestias voluptatum repellat est cumque.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quidem fuga. Facere accusantium, numquam ad assumenda impedit sapiente recusandae doloremque error ullam non odio suscipit, quaerat fuga? Culpa, ad tenetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate iste, at ipsa saepe sunt laborum asperiores quod quia sapiente perferendis consectetur. Nobis quis, magnam obcaecati delectus natus accusantium error expedita? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, nesciunt! Eum quod corrupti ipsum fugit optio vel. Ducimus, officiis ratione? Facere, ipsum repellendus repudiandae tenetur quaerat totam enim delectus magnam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae minus officiis quisquam pariatur, quia totam sapiente asperiores vero libero magnam a commodi ab. Debitis blanditiis iusto doloribus nobis? Possimus, atque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ipsum, sint consequuntur id quaerat iure fuga cum illum impedit quis consequatur sit natus vel possimus molestias voluptatum repellat est cumque.</p>
 </body>
 </html>
